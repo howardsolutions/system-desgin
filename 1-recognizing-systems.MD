@@ -32,21 +32,21 @@ The same basic parts can be optimized and configured differently to serve comple
 ## Notes on the Exercise design a pizza shop
 
 - It's acceptable that different people produce different diagramss
-because initial requirements are often vague, and people have different perspectives and experiences that inform their approach. 
+  because initial requirements are often vague, and people have different perspectives and experiences that inform their approach.
 
 As long as the solution makes logical sense and can be explained, and the end goal is achieved (like the customer getting their pizza), the design is valid.
 
 ### key skills involved in system design of a business processs
 
-- Breaking down requirements into logical steps, thinking critically about what needs to be accomplished, and identifying what details are necessary versus what can be abstracted away. 
+- Breaking down requirements into logical steps, thinking critically about what needs to be accomplished, and identifying what details are necessary versus what can be abstracted away.
 
 This involves asking the RIGHT QUESTIONS to CLARIFY requirements before designing the system.
 
-- Product managers typically care about features being built, requirements, accessibility, supported languages, and high-level architectural decisions. 
-They usually don't care about implementation details like whether TypeScript or JavaScript is used.
+- Product managers typically care about features being built, requirements, accessibility, supported languages, and high-level architectural decisions.
+  They usually don't care about implementation details like whether TypeScript or JavaScript is used.
 
 - Without detailed requirements and asking the right questions
-you'll make assumptions that may not align with what's actually needed. 
+  you'll make assumptions that may not align with what's actually needed.
 
 Different stakeholders care about different details - for example, a product manager likely cares about features, requirements, accessibility, and supported languages, but probably not whether you use TypeScript or JavaScript.
 
@@ -58,15 +58,19 @@ Different stakeholders care about different details - for example, a product man
 
 - Designed to handle FAILURES and SCALE across multiple locations.
 
-## COMMON SYSTEM COMPONENTS 
+- Distributed systems are created to handle failure and to be able to scale.
+  It's difficult to scale just one machine (vertical scaling), and a single machine creates a single point of failure. By distributing across multiple machines, systems can better handle load and avoid catastrophic failures.
 
-1. Client - Role: sends requests, displays data to users. 
+
+## COMMON SYSTEM COMPONENTS
+
+1. Client - Role: sends requests, displays data to users.
 
 2. Database - Stores, updates and retrieves data
 
-3. Server - Process requests, business logic. 
+3. Server - Process requests, business logic.
 
-4. Load balancer - Distributes INCOMING traffic to keeps things running smoothly 
+4. Load balancer - Distributes INCOMING traffic to keeps things running smoothly
 
 5. Cache - Make things FASTER by TEMPORARILY storing data
 
