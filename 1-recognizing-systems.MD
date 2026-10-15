@@ -50,3 +50,28 @@ you'll make assumptions that may not align with what's actually needed.
 
 Different stakeholders care about different details - for example, a product manager likely cares about features, requirements, accessibility, and supported languages, but probably not whether you use TypeScript or JavaScript.
 
+## What is a Distributed System
+
+- Multiple computers working together as a SINGLE SYSTEM
+
+- Components maybe PHYSICALLY SEPARATED
+
+- Designed to handle FAILURES and SCALE across multiple locations.
+
+## COMMON SYSTEM COMPONENTS 
+
+1. Client - Role: sends requests, displays data to users. 
+
+2. Database - Stores, updates and retrieves data
+
+3. Server - Process requests, business logic. 
+
+4. Load balancer - Distributes INCOMING traffic to keeps things running smoothly 
+
+5. Cache - Make things FASTER by TEMPORARILY storing data
+
+you don't always NEED to cache, but you should always be caching.
+
+ABC = always be caching.
+
+cache makes things faster. we always want cache WHEN we can.
