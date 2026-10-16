@@ -61,7 +61,6 @@ Different stakeholders care about different details - for example, a product man
 - Distributed systems are created to handle failure and to be able to scale.
   It's difficult to scale just one machine (vertical scaling), and a single machine creates a single point of failure. By distributing across multiple machines, systems can better handle load and avoid catastrophic failures.
 
-
 ## COMMON SYSTEM COMPONENTS
 
 1. Client - Role: sends requests, displays data to users.
@@ -79,3 +78,20 @@ you don't always NEED to cache, but you should always be caching.
 ABC = always be caching.
 
 cache makes things faster. we always want cache WHEN we can.
+
+## How does the architecture of a mobile application differ from a web application in terms of server and client responsibilities?
+
+In a mobile application, the UI is already baked into the client (installed from the app store), so a web server isn't needed to serve the UI. 
+
+The mobile app typically makes API requests directly to get data rather than requesting UI components. 
+
+This means the system's role SHIFTS to primarily keeping caches up to date with data rather than serving both UI and data.
+
+## QUERY CACHE
+
+A cache placed in front of a database (called a query cache) helps expand the capacity and power of the database. 
+
+Instead of making full database lookups every time, it stores common queries like fetching homepages or news feeds. 
+This reduces the load on the database by serving frequently requested data directly from the cache.
+
+In a mobile application, the UI is already baked into the client (installed from the app store), so the mobile app typically makes API requests only for data, not for UI. The web server that serves UI becomes unnecessary, and the mobile app can fetch data directly from a cache or API.
