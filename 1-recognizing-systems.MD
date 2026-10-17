@@ -81,17 +81,17 @@ cache makes things faster. we always want cache WHEN we can.
 
 ## How does the architecture of a mobile application differ from a web application in terms of server and client responsibilities?
 
-In a mobile application, the UI is already baked into the client (installed from the app store), so a web server isn't needed to serve the UI. 
+In a mobile application, the UI is already baked into the client (installed from the app store), so a web server isn't needed to serve the UI.
 
-The mobile app typically makes API requests directly to get data rather than requesting UI components. 
+The mobile app typically makes API requests directly to get data rather than requesting UI components.
 
 This means the system's role SHIFTS to primarily keeping caches up to date with data rather than serving both UI and data.
 
 ## QUERY CACHE
 
-A cache placed in front of a database (called a query cache) helps expand the capacity and power of the database. 
+A cache placed in front of a database (called a query cache) helps expand the capacity and power of the database.
 
-Instead of making full database lookups every time, it stores common queries like fetching homepages or news feeds. 
+Instead of making full database lookups every time, it stores common queries like fetching homepages or news feeds.
 This reduces the load on the database by serving frequently requested data directly from the cache.
 
 In a mobile application, the UI is already baked into the client (installed from the app store), so the mobile app typically makes API requests only for data, not for UI. The web server that serves UI becomes unnecessary, and the mobile app can fetch data directly from a cache or API.

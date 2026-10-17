@@ -50,7 +50,7 @@ the features, user interactions, and business requirements.
 
 ## NON-FUNCTIONAL REQUIREMENTS
 
-describe how the system should perform - the quality attributes like speed, consistency, and performance trade-offs that constrain the system.
+describe HOW the system should perform - the quality attributes like speed, consistency, and performance trade-offs that constrain the system.
 
 - non functional is more challenging ones. you have to know the right questions to ask to get there.
 
