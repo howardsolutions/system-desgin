@@ -56,4 +56,3 @@ How many URLs do we anticipate supporting in total (per day, month, or year)?
 What is the expected volume of requests?
 
 These numbers impact decisions about short code generation strategies, database design, caching strategies, and whether link reuse (deterministic hashing) is beneficial or if unique links per user are needed.
-s
