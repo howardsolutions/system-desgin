@@ -106,3 +106,9 @@ web browsers
   frontend from
   backend
   development
+
+## WebSockets consume battery life quickly on mobile devices because they constantly ping the backend to keep the connection alive and perform handshakes. HTTP long polling can be a better middle ground solution for mobile applications.
+
+## For a food delivery app showing driver location, what factors determine the choice between HTTP polling and WebSockets
+
+The choice depends on update frequency requirements and the directionality of communication. If updates don't need to happen very often, standard HTTP polling every couple of seconds is sufficient. For very frequent updates, WebSockets may be necessary. Additionally, the write operations (driver sending location) could use HTTP, while read operations (user viewing location) could use Server-Sent Events.
