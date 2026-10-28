@@ -30,5 +30,6 @@ horizontal scale
 
 # MORE NOTES
 
-Write-heavy applications include logging systems, metric collection, and eventing systems. Read-heavy applications include npm (where most users download packages), social media (where users mostly scroll), and data warehouses. Most applications are read-heavy with ratios ranging from 10:1 to 1000:1 reads to writes.
+Write-heavy applications include logging systems, metric collection, and eventing systems. 
+Read-heavy applications include npm (where most users download packages), social media (where users mostly scroll), and data warehouses. Most applications are read-heavy with ratios ranging from 10:1 to 1000:1 reads to writes.
 
