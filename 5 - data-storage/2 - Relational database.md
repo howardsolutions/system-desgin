@@ -20,7 +20,7 @@ Relational databases are better suited for strict, consistent data storage schem
 
 They provide stronger guarantees about data integrity and consistency, though the cost of fixing an incorrect schema is very expensive if discovered later.
 
-#s# Differences between horizontal and vertical scaling in the context of a database.
+## Differences between horizontal and vertical scaling in the context of a database.
 
 Horizontal scaling is like adding multiple ovens, while vertical scaling is like getting a bigger oven.
 
@@ -37,3 +37,6 @@ Relational databases can perform complex queries quickly because the data is str
 Denormalization is the practice of duplicating data rather than spreading it across multiple relations (the opposite of normalization). 
 
 In non-relational databases like MongoDB, denormalization is often used to optimize read performance by putting everything in one document, though this must be balanced against document size limits (such as MongoDB's 16 megabyte limit)..
+
+- Database indexing is a technique that allows you to find data quickly without searching every row, often using structures like B trees.
+
