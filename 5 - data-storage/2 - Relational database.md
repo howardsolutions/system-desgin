@@ -30,7 +30,13 @@ While you can horizontally scale a relational database by slicing the data and c
 
 ## Relational databases excel at complex queries compared to non-relational databases.
 
-Relational databases can perform complex queries quickly because the data is structured with clear relationships and uses indexing. Through indexing (typically B-tree structures), the database knows exactly where data is located and which column it's in, allowing for direct lookup rather than sequential scanning. This enables very fast extraction of data. In contrast, non-relational databases with unstructured data must search field by field, making queries slower.
+Relational databases can perform complex queries quickly because the data is structured with clear relationships and uses indexing. 
+
+Through indexing (typically B-tree structures), the database knows exactly where data is located and which column it's in, allowing for direct lookup rather than sequential scanning. 
+
+This enables very fast extraction of data. 
+
+In contrast, non-relational databases with unstructured data must search field by field, making queries slower.
 
 ## Denormalization in the context of non-relational database.
 
