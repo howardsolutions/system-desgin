@@ -4,7 +4,8 @@ Always be caching.
 
 1. Reduced latency, which improves user experience,
 2. Decreased system load by eliminating the need to make multiple hops to the database,
-   and 
+   and
+
 3) Lower costs, since frequently accessed data can be retrieved from cache instead of performing expensive database lookups.
 
 # There are so many different types of caches on every layers.
@@ -59,3 +60,32 @@ In write-behind caching, the application immediately writes to the cache and ret
 
 A CDN is a form of caching that stores static assets as close to the user as possible. CDNs place content in distributed locations (sometimes in ISPs or data centers) around the world, reducing the number of network hops needed to retrieve content. This significantly reduces latency and improves user experience by serving content from nearby locations.
 
+<hr />
+
+# CACHING Trade Offs
+
+## Performance vs. Freshness
+
+The longer you keep data in the cache, the better the performance will be.
+
+But also, you are running a higher and higher risk that the data is stale.
+
+## Catch invalidation. 
+
+( invalidation just simply means, or to put it simply, it just means hey, all of this data here is no longer valid anymore. )
+
+Time base expiration (TTL = time to live)
+Event-based (server sent event?)
+versioning tagging
+refresh ahead.
+
+## Cash Eviction
+
+FIFO. First in, first out.
+LIFO. Last in first out.
+L R U least recently use.
+MRU most recently used.
+LFU - least frequently used.
+RR random replacement.
+
+Cache is finite. The amount of space we have, no matter it is on disk or RAM, it is finite.
