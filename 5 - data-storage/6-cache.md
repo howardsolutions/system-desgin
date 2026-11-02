@@ -75,9 +75,14 @@ But also, you are running a higher and higher risk that the data is stale.
 ( invalidation just simply means, or to put it simply, it just means hey, all of this data here is no longer valid anymore. )
 
 Time base expiration (TTL = time to live)
+
 Event-based (server sent event?)
+
 versioning tagging
+
 refresh ahead.
+
+Refresh ahead is a cache invalidation strategy where the system is designed to automatically update the cache periodically to keep the data current. In this approach, applications read from the cache while a background process continuously refreshes it with updated data.
 
 ## Cash Eviction
 
@@ -89,3 +94,6 @@ LFU - least frequently used.
 RR random replacement.
 
 Cache is finite. The amount of space we have, no matter it is on disk or RAM, it is finite.
+
+- A cache is always a secondary representation of data, not the primary source. This creates an inherent tension between performance (speed) and data freshness (how up-to-date the data is).
+
