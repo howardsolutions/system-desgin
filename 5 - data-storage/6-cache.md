@@ -88,8 +88,10 @@ Refresh ahead is a cache invalidation strategy where the system is designed to a
 
 FIFO. First in, first out.
 LIFO. Last in first out.
-L R U least recently use.
+
+`L R U ` least recently use.
 MRU most recently used.
+
 LFU - least frequently used.
 RR random replacement.
 
