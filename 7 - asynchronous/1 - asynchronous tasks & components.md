@@ -56,9 +56,16 @@ video uploads and processing, image processing, generating reports or PDFs, paym
 
 These tasks take significant time and would decrease system availability if processed synchronously.
 
-- The most common mistake is overusing async workflows by putting everything into queues. 
+- `The most common mistake` is overusing async workflows by putting everything into queues. 
 
 While it's tempting because it improves surface-level performance and makes requests return quickly, it adds significant complexity and maintenance overhead. 
 
 Async workflows should only be used when necessary, as they require additional infrastructure (message brokers, queues, worker pools) and make debugging more difficult when things go wrong.
 
+- Advantages: Makes scaling very easy - you can add more queues, scale worker pools up or down, create dedicated worker pools for specific job types, and dynamically adjust resources based on queue depth and job types. 
+
+You can pinpoint slow parts of the system and solve them quickly. 
+
+- Disadvantages: Adds significant complexity to the system, making it harder to reason about and debug. 
+
+Issues like lost jobs, crashed workers, or queue failures become more difficult to track down. Maintenance overhead increases substantially.
